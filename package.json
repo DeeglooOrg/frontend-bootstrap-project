@@ -13,5 +13,9 @@
     "redux": "^4.0.1",
     "redux-saga": "^1.0.2",
     "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^1.9.0",
+    "ts-loader": "^6.0.1"
   }
 }
