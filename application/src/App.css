@@ -1,3 +1,13 @@
 .app-container{
   text-align:  center;
 }
+
+.change-text-btn, .change-text-btn:active, .change-text-btn:hover, .change-text-btn:focus {
+  padding: 10px;
+  background: lightblue;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: rotate(360deg);
+  outline: 0;
+}
+

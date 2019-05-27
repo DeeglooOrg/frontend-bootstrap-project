@@ -2,6 +2,8 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { changeRandomMessage } from '../../../presentation/state/actions';
 
+import '../App.css';
+
 interface Props {
   message: string;
   changeMessage(): (message: string) => object;
@@ -12,7 +14,7 @@ const Component1 = (props: Props) => {
     <div>
       <h1>Component 1</h1>
       <p>{props.message}</p>
-      <button onClick={props.changeMessage}>click</button>
+      <button onClick={props.changeMessage} className="change-text-btn">click</button>
     </div>
   );
 };
