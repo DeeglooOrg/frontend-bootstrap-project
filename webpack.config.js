@@ -5,7 +5,7 @@ const webpack = require("webpack");
 module.exports = {
   entry: ["./application/src/index.tsx"],
   resolve: {
-    extensions: [".ts", ".tsx", ".js"]
+    extensions: [".ts", ".tsx", ".js", ".css"]
   },
   output: {
     path: path.join(__dirname, '/application/dist'),
@@ -19,6 +19,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
       {
         test: /\.tsx?$/,
         loader: 'ts-loader'
