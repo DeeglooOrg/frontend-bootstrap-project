@@ -1,18 +1,34 @@
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require("webpack");
+
 module.exports = {
-  mode: "development",
-  devtool: "inline-source-map",
-  entry: "./application/src/index.tsx",
-  output: {
-    filename: "bundle.js"
-  },
+  entry: ["./application/src/index.tsx"],
   resolve: {
-    // Add `.ts` and `.tsx` as a resolvable extension.
     extensions: [".ts", ".tsx", ".js"]
+  },
+  output: {
+    path: path.join(__dirname, '/application/dist'),
+    filename: 'bundle.min.js'
+  },
+  devServer: {
+    contentBase: path.join(__dirname, '/application/src'),
+    compress: true,
+    hot: true,
+    historyApiFallback: true
   },
   module: {
     rules: [
-      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-      { test: /\.tsx?$/, loader: "ts-loader" }
+      {
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader'
+      }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './application/public/index.html'
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };

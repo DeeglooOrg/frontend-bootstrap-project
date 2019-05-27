@@ -6,15 +6,10 @@ const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
   rootReducer,
-  compose(applyMiddleware(sagaMiddleware))
+  compose(applyMiddleware(sagaMiddleware),
+    (window as any).__REDUX_DEVTOOLS_EXTENSION__ &&
+    (window as any).__REDUX_DEVTOOLS_EXTENSION__()
+  )
 );
-
-// const store = createStore(
-//   rootReducer,
-//   compose(applyMiddleware(sagaMiddleware),
-//     (window as any).__REDUX_DEVTOOLS_EXTENSION__ &&
-//     (window as any).__REDUX_DEVTOOLS_EXTENSION__()
-//   )
-// );
 
 export default store;

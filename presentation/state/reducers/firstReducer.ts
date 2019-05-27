@@ -2,7 +2,12 @@ const initialState = {
   message: 'Some random message from redux state',
 };
 
-const secondReducer = (state = initialState, action) => {
+export interface Action {
+  type: string;
+  payload: string
+}
+
+const secondReducer = (state = initialState, action: Action) => {
   const newState = { ...state };
 
   if (action.type === 'CHANGE_MESSAGE') {

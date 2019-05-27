@@ -1,13 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 
 const Component2 = () => {
-    return (
-        <div>
-            <h1>Component 2</h1>
-            <p>Get some API data</p>
-            <button>click</button>
-        </div>
-    )
+  return (
+    <div>
+      <h1>Component 2</h1>
+    </div>
+  )
 }
 
 export default Component2;
