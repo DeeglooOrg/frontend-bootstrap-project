@@ -1,3 +1,5 @@
+import { ActionTypes } from '../../../domain/enums'
+
 const initialState = {
   message: 'Some random message from redux state',
 };
@@ -10,7 +12,7 @@ export interface Action {
 const secondReducer = (state = initialState, action: Action) => {
   const newState = { ...state };
 
-  if (action.type === 'CHANGE_MESSAGE') {
+  if (action.type === ActionTypes.CHANGE_MESSAGE) {
     return {
       ...newState,
       message: action.payload,
