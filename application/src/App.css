@@ -1,13 +1,3 @@
-.app-container{
-  text-align:  center;
+*, *:before, *:after {
+  font-family: 'Roboto', sans-serif;
 }
-
-.change-text-btn, .change-text-btn:active, .change-text-btn:hover, .change-text-btn:focus {
-  padding: 10px;
-  background: lightblue;
-  border-radius: 10px;
-  cursor: pointer;
-  transform: rotate(360deg);
-  outline: 0;
-}
-

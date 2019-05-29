@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 
+import Grid from '@material-ui/core/Grid';
+
 interface Props {
   title: string,
   body: string,
@@ -8,12 +10,14 @@ interface Props {
 
 const Component2 = (props: Props) => {
   return (
-    <div>
-      <h1>Component 2</h1>
-      <p>Fetch request to <a href='https://jsonplaceholder.typicode.com/posts/1'>json placeholder</a> using redux-saga</p>
-      <p>Title: <br /> {props.title}</p>
-      <p>Body: <br /> {props.body}</p>
-    </div>
+    <Grid container>
+      <Grid item xs={12}>
+        <h1>Component 2</h1>
+        <p>Fetch request to <a href='https://jsonplaceholder.typicode.com/posts/1'>json placeholder</a> using redux-saga</p>
+        <p>Title: <br /> {props.title}</p>
+        <p>Body: <br /> {props.body}</p>
+      </Grid>
+    </Grid>
   )
 }
 

@@ -1,0 +1,7 @@
+.nav-link-color,
+.nav-link-color:active,
+.nav-link-color:hover,
+.nav-link-color:focus {
+  color: white;
+  text-decoration: none;
+}

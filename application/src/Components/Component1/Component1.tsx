@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { changeRandomMessage } from '../../../presentation/state/actions';
+import { changeRandomMessage } from '../../../../presentation/state/actions';
 
-import '../App.css';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 
 interface Props {
   message: string;
@@ -11,11 +12,15 @@ interface Props {
 
 const Component1 = (props: Props) => {
   return (
-    <div>
-      <h1>Component 1</h1>
-      <p>{props.message}</p>
-      <button onClick={props.changeMessage} className="change-text-btn">click</button>
-    </div>
+    <Grid container>
+      <Grid item xs={12}>
+        <h1>Component 1</h1>
+        <p>{props.message}</p>
+        <Button onClick={props.changeMessage} variant='contained' color='default'>
+          Change text
+      </Button>
+      </Grid>
+    </Grid>
   );
 };
 
