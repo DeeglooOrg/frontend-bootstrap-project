@@ -10,6 +10,7 @@
   "author": "Luka Zrnic <luka.zrnic@deegloo.com>",
   "license": "ISC",
   "devDependencies": {
+    "@types/webpack-env": "^1.13.9",
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
     "html-webpack-plugin": "^3.2.0",
@@ -28,6 +29,7 @@
     "@types/react-dom": "^16.8.4",
     "@typescript-eslint/parser": "^1.9.0",
     "autoprefixer": "^9.5.1",
+    "connected-react-router": "^6.4.0",
     "eslint-plugin-react": "^7.13.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
