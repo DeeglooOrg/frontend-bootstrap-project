@@ -6,3 +6,9 @@ export const changeRandomMessage = (message: string) => {
     payload: message,
   };
 };
+
+export const incrementNumber = () => {
+  return {
+    type: ActionTypes.INCREMENT_NUMBER
+  }
+}

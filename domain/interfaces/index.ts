@@ -1,2 +1,2 @@
-export * from './ChangeMessage';
+export * from './FirstComponent';
 export * from './GetApiData';
