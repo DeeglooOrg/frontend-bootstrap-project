@@ -1,15 +1,18 @@
-import { ActionTypes } from '../../../domain/enums'
+/*eslint-disable no-unused-vars*/
 
-const initialState = {
+import { ActionTypes } from '../../../domain/enums'
+import { ChangeMessageState } from '../../../domain/interfaces'
+
+const initialState: ChangeMessageState = {
   message: 'Some random message from redux state',
 };
 
-export interface Action {
+interface Action {
   type: string;
   payload: string
 }
 
-const secondReducer = (state = initialState, action: Action) => {
+const secondReducer = (state = initialState, action: Action): ChangeMessageState => {
   const newState = { ...state };
 
   if (action.type === ActionTypes.CHANGE_MESSAGE) {
