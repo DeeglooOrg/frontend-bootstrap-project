@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { changeRandomMessage } from '../../../../presentation/state/actions';
+import { ActionTypes } from '../../../../domain/enums'
 
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
@@ -44,7 +45,7 @@ const mapStateToProps = (state: any) => {
 const mapDispatchToProps = (dispatch: any) => {
   return {
     changeMessage: () => dispatch(changeRandomMessage('New random message!')),
-    incrementNumber: () => dispatch({ type: 'INCREMENT_NUMBER', payload: 1 })
+    incrementNumber: () => dispatch({ type: ActionTypes.INCREMENT_NUMBER, payload: 1 })
   };
 };
 
