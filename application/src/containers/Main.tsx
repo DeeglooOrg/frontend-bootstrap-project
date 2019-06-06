@@ -2,10 +2,10 @@ import * as React from 'react';
 import { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Navigation from '../Components/Navigation/Navigation'
-import HomePage from '../Components/HomePage/HomePage';
-import Component1 from '../Components/Component1/Component1';
-import Component2 from '../Components/Component2/Component2';
+import Navigation from '../components/Navigation/Navigation'
+import HomePage from '../components/HomePage/HomePage';
+import Component1 from '../components/Component1/Component1';
+import Component2 from '../components/Component2/Component2';
 
 class App extends Component {
   render() {

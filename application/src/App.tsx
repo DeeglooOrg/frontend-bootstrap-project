@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Component, Fragment } from 'react';
 import './App.css';
 
-import Main from './Containers/Main';
+import Main from './containers/Main';
 
 class App extends Component {
   render() {
