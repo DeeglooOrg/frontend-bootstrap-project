@@ -1,10 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { shallow, configure } from 'enzyme';
-
-// the next two lines are needed to make the tests work (for React)
-import * as Adapter from 'enzyme-adapter-react-16';
-configure({ adapter: new Adapter() });
+import { shallow } from 'enzyme';
 
 import HomePage from '../components/HomePage/HomePage';
 
