@@ -2,6 +2,7 @@
 
 import { ActionTypes } from '../../../domain/enums'
 import { FirstComponentState } from '../../../domain/interfaces'
+import incrementNumber from '../../../domain/use-cases/incrementNumber';
 
 const initialState: FirstComponentState = {
   message: 'Some random message from redux state',
@@ -22,7 +23,7 @@ const firstReducer = (state = initialState, action: Action): FirstComponentState
       message: action.payload,
     };
   } else if (action.type === ActionTypes.INCREMENT_NUMBER) {
-    const newNumber = newState.myNumber + action.payload
+    const newNumber = incrementNumber(newState.myNumber, action.payload)
 
     return {
       ...newState,
