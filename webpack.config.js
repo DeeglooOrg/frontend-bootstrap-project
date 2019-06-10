@@ -3,9 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: ["./application/src/index.tsx"],
+  entry: ['./application/src/index.tsx'],
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".css"]
+    extensions: ['.ts', '.tsx', '.js', '.css']
   },
   output: {
     path: path.join(__dirname, '/application/dist'),

@@ -1,21 +1,23 @@
 module.exports = {
-  "testMatch": [
-    "**/*.test.ts",
-    "**/*.test.tsx",
+  'testMatch': [
+    '**/*.test.ts',
+    '**/*.test.tsx',
   ],
-  "moduleDirectories": [
-    "./node_modules",
-    "./src",
+  'moduleDirectories': [
+    './node_modules',
+    './src',
   ],
-  "moduleFileExtensions": [
+  'moduleFileExtensions': [
     'js',
-    "ts",
-    "tsx",
+    'ts',
+    'tsx',
   ],
-  "transform": {
-    "^.+\\.ts$": "ts-jest",
-    "^.+\\.tsx$": "ts-jest",
-    ".+\\.css$": "jest-transform-css"
+  'transform': {
+    '^.+\\.ts$': 'ts-jest',
+    '^.+\\.tsx$': 'ts-jest',
+    '.+\\.css$': 'jest-transform-css'
   },
-  "setupFilesAfterEnv": ["./setupTests.ts"], // runs the code from the setupTests.ts file before each test so that the adapter does not have to be in each test file which tests React component
+  'setupFilesAfterEnv': [
+    './setupTests.ts'
+  ], // runs the code from the setupTests.ts file before each test so that the adapter does not have to be in each test file which tests React component
 }
