@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
-    "build": "npm run lint && webpack --mode production --ignore-pattern 'node_modules/'",
+    "build": "npm run lint && webpack --mode production",
     "test": "jest",
-    "lint": "eslint . --ext .js --ext .ts --ext .tsx"
+    "lint": "eslint . --ext .js --ext .ts --ext .tsx --ignore-pattern 'node_modules/'"
   },
   "author": "Luka Zrnic <luka.zrnic@deegloo.com>",
   "license": "ISC",
