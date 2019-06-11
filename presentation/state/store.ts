@@ -29,8 +29,9 @@ export default function configureStore(preloadedState) {
         routerMiddleware(history),
         sagaMiddleware
       ),
-      (window as any).__REDUX_DEVTOOLS_EXTENSION__ &&
-      (window as any).__REDUX_DEVTOOLS_EXTENSION__()
+      (<any>window).__REDUX_DEVTOOLS_EXTENSION__
+        ? (<any>window).__REDUX_DEVTOOLS_EXTENSION__()
+        : f => f
     )
   )
 
