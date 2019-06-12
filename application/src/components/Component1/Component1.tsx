@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { changeRandomMessage } from '../../../../presentation/state/actions';
 import { ActionTypes } from '../../../../domain/enums'
 
+import HeadTags from '../Head/Tags';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
@@ -15,23 +16,26 @@ interface Props {
 
 const Component1 = (props: Props) => {
   return (
-    <Grid container>
-      <Grid item xs={12}>
-        <h1>Component 1</h1>
-      </Grid>
-      <Grid item xs={6}>
-        <p>{props.message}</p>
-        <Button onClick={props.changeMessage} variant='contained' color='default'>
-          Change text
+    <>
+      <HeadTags title='Component 1' />
+      <Grid container>
+        <Grid item xs={12}>
+          <h1>Component 1</h1>
+        </Grid>
+        <Grid item xs={6}>
+          <p>{props.message}</p>
+          <Button onClick={props.changeMessage} variant='contained' color='default'>
+            Change text
         </Button>
-      </Grid>
-      <Grid item xs={6}>
-        <p>{props.myNumber}</p>
-        <Button onClick={props.incrementNumber} variant='contained' color='default'>
-          Increment number
+        </Grid>
+        <Grid item xs={6}>
+          <p>{props.myNumber}</p>
+          <Button onClick={props.incrementNumber} variant='contained' color='default'>
+            Increment number
         </Button>
+        </Grid>
       </Grid>
-    </Grid>
+    </>
   );
 };
 
