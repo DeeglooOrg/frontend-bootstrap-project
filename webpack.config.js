@@ -9,7 +9,8 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, '/application/dist'),
-    filename: 'bundle.min.js'
+    filename: 'bundle.min.js',
+    publicPath: '/'
   },
   devServer: {
     contentBase: path.join(__dirname, '/application/src'),
