@@ -4,9 +4,9 @@ import createSagaMiddleware from 'redux-saga';
 import { routerMiddleware } from 'connected-react-router';
 
 import rootReducer from './reducers/index';
-import getApiDataSaga from './sagas/getApiDataSaga'
+import getApiDataSaga from './sagas/getApiDataSaga';
 
-export const history = createBrowserHistory()
+export const history = createBrowserHistory({});
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -31,7 +31,7 @@ export default function configureStore(preloadedState) {
       ),
       (<any>window).__REDUX_DEVTOOLS_EXTENSION__
         ? (<any>window).__REDUX_DEVTOOLS_EXTENSION__()
-        : f => f
+        : (f: any) => f
     )
   )
 

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Navigation from '../components/Navigation/Navigation'
 import HomePage from '../components/HomePage/HomePage';
@@ -12,7 +12,7 @@ import RequireAuth from '../components/RequireAuth/RequireAuth';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <> {/* Router removed because time traveling in Redux DevTools - specs are in the connected-react-router documentation */}
         <Navigation />
 
         <Switch>
@@ -22,7 +22,7 @@ class App extends Component {
           <Route path='/login' component={Login} />
           <Route path='*' render={() => <h1>not found</h1>} />
         </Switch>
-      </Router>
+      </>
     );
   }
 }
