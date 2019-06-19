@@ -9,7 +9,7 @@ import Login from '../components/Login/Login';
 
 import RequireAuth from '../components/RequireAuth/RequireAuth';
 
-class App extends Component {
+class Main extends Component {
   render() {
     return (
       <> {/* Router removed because time traveling in Redux DevTools - specs are in the connected-react-router documentation */}
@@ -27,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Main;
