@@ -26,13 +26,13 @@ const Component1 = (props: Props) => {
           <p>{props.message}</p>
           <Button onClick={props.changeMessage} variant='contained' color='default'>
             Change text
-        </Button>
+          </Button>
         </Grid>
         <Grid item xs={6}>
           <p>{props.myNumber}</p>
           <Button onClick={props.incrementNumber} variant='contained' color='default'>
             Increment number
-        </Button>
+          </Button>
         </Grid>
       </Grid>
     </>

@@ -18,8 +18,8 @@ const RequireAuth = (props: Props) => {
           <Route exact path={`${props.match.url}/component2`} component={Component2} />
         </div>
       ) : (
-          <Redirect to='/login' />
-        )
+        <Redirect to='/login' />
+      )
       }
     </div>
   )
