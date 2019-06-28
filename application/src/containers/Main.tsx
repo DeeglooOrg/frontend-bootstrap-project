@@ -18,7 +18,7 @@ class Main extends Component {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/component1' component={Component1} />
-          <Route path='/p' component={RequireAuth} />
+          <Route path='/component2' component={RequireAuth} />
           <Route path='/login' component={Login} />
           <Route path='*' render={() => <h1>not found</h1>} />
         </Switch>

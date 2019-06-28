@@ -5,8 +5,6 @@ import { connect } from 'react-redux';
 import Component2 from '../Component2/Component2';
 
 interface Props {
-  match: any;
-  path: string,
   isAuthenticated: boolean
 }
 
@@ -15,7 +13,7 @@ const RequireAuth = (props: Props) => {
     <div>
       {props.isAuthenticated ? (
         <div>
-          <Route exact path={`${props.match.url}/component2`} component={Component2} />
+          <Route exact path='/component2' component={Component2} />
         </div>
       ) : (
         <Redirect to='/login' />

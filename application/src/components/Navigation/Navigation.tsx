@@ -33,7 +33,7 @@ const Navigation = (props: Props) => {
 
           <ListItemText inset>
             <TypoGraphy align='center'>
-              <Link className='nav-link-color' to='/p/component2'>Component 2</Link>
+              <Link className='nav-link-color' to='/component2'>Component 2</Link>
             </TypoGraphy>
           </ListItemText>
 
