@@ -10,11 +10,14 @@ import configureStore, { history } from '../../presentation/state/store'
 
 const store = configureStore({});
 
+const root = document.createElement('div')
+document.body.appendChild(root);
+
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <App />
     </ConnectedRouter>
   </Provider>,
-  document.getElementById('root')
+  root
 );
