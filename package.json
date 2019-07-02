@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "npm run lint && webpack --mode production",
+    "host": "npm run build && http-server ./application/dist --push-state -p 3000 -c-1 -o",
     "test": "jest",
     "lint": "eslint . --ext .js,.ts,.tsx",
     "lint:fix": "npm run lint -- --fix"
@@ -15,12 +16,12 @@
   "devDependencies": {
     "@types/enzyme": "^3.9.3",
     "@types/jest": "^24.0.13",
-    "@types/react-redux": "^7.0.9",
-    "@types/react-router-dom": "^4.3.3",
     "@types/react": "^16.8.18",
     "@types/react-dom": "^16.8.4",
-    "@typescript-eslint/parser": "^1.9.0",
+    "@types/react-redux": "^7.0.9",
+    "@types/react-router-dom": "^4.3.3",
     "@types/webpack-env": "^1.13.9",
+    "@typescript-eslint/parser": "^1.9.0",
     "autoprefixer": "^9.5.1",
     "css-loader": "^2.1.1",
     "enzyme": "^3.9.0",
@@ -32,6 +33,7 @@
     "jest": "^24.8.0",
     "jest-transform-css": "^2.0.0",
     "postcss-loader": "^3.0.0",
+    "spa-http-server": "^0.9.0",
     "style-loader": "^0.23.1",
     "ts-jest": "^24.0.2",
     "ts-loader": "^6.0.1",
