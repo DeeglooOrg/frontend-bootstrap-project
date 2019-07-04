@@ -1,7 +1,13 @@
 {
   "name": "frontend-bootstrap-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Frontend Bootstrap Project using the Clean Architecture by Uncle Bob",
+  "author": "Luka Zrnic <luka.zrnic@deegloo.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DeeglooOrg/frontend-bootstrap-project"
+  },
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
@@ -11,8 +17,6 @@
     "lint": "eslint . --ext .js,.ts,.tsx",
     "lint:fix": "npm run lint -- --fix"
   },
-  "author": "Luka Zrnic <luka.zrnic@deegloo.com>",
-  "license": "ISC",
   "devDependencies": {
     "@types/enzyme": "^3.9.3",
     "@types/jest": "^24.0.13",
