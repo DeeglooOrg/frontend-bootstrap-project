@@ -12,14 +12,14 @@ const sagaMiddleware = createSagaMiddleware();
 
 export default function configureStore(preloadedState) {
 
-  // hot reload for reducers
-  if (module.hot) {
-    module.hot.accept('./reducers/', () => {
-      console.log('reducer module hot scope');
-      const nextRootReducer = require('./reducers/index').default;
-      store.replaceReducer(nextRootReducer);
-    });
-  }
+  // TODO: hot reload for reducers - currently not working
+  // if (module.hot) {
+  //   module.hot.accept('./reducers/', () => {
+  //     console.log('reducer module hot scope');
+  //     const nextRootReducer = require('./reducers/index').default;
+  //     store.replaceReducer(nextRootReducer);
+  //   });
+  // }
 
   const store = createStore(
     rootReducer(history),
