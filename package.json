@@ -12,11 +12,12 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "npm run lint && webpack --mode production",
-    "host": "npm run build && npx spa-http-server ./application/dist --push-state -p 3000 -c-1 -o",
+    "host": "npm run build && node server.js",
     "test": "jest",
     "lint": "eslint . --ext .js,.ts,.tsx",
     "lint:fix": "npm run lint -- --fix"
   },
+  "proxy": "http://localhost:3000",
   "devDependencies": {
     "@types/enzyme": "^3.9.3",
     "@types/jest": "^24.0.13",
@@ -48,6 +49,7 @@
   "dependencies": {
     "@material-ui/core": "^4.0.1",
     "connected-react-router": "^6.4.0",
+    "express": "^4.17.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",

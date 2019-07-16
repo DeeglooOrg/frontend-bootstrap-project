@@ -12,7 +12,7 @@ Run `npm run build`. This command will create index.html and bundle.min.js in th
 
 # Host
 
-Run `npm run host`. This command will start `npm run build` script and it will use http-server to host and open build files. It will be automatically open in your browser at http://localhost:3000/.
+Run `npm run host`. This command will start `npm run build` script and it will use `server.js` to host build files (dist folder). Navigate to http://localhost:3000/.
 
 # Notes
   - if tests for React components do not work -> check compatibility of React and Enzyme adapter defined in the setupTests.ts file 
