@@ -1,3 +1,4 @@
+import { hot } from 'react-hot-loader';
 import * as React from 'react';
 import { Component, Fragment } from 'react';
 import './App.css';
@@ -14,4 +15,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default hot(module)(App);

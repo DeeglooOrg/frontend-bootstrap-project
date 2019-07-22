@@ -5,7 +5,8 @@ const webpack = require('webpack');
 module.exports = {
   entry: ['./application/src/index.tsx'],
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.css']
+    extensions: ['.ts', '.tsx', '.js', '.css'],
+    alias: { 'react-dom': '@hot-loader/react-dom' }
   },
   output: {
     path: path.join(__dirname, '/application/dist'),
