@@ -4,8 +4,7 @@ import { changeRandomMessage } from '../../../../presentation/state/actions';
 import { ActionTypes } from '../../../../domain/enums'
 
 import HeadTags from '../Head/Tags';
-import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
+import { Grid, Button } from '@material-ui/core';
 
 interface Props {
   message: string;

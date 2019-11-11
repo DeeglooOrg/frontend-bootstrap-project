@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import './HomePage.css';
+import './HomePage.scss';
 
 import HeadTags from '../Head/Tags';
-import Grid from '@material-ui/core/Grid';
+import { Grid } from '@material-ui/core';
 
 const HomePage = () => {
   return (

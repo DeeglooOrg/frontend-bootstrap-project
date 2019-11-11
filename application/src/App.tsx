@@ -1,7 +1,7 @@
 import { hot } from 'react-hot-loader';
 import * as React from 'react';
 import { Component, Fragment } from 'react';
-import './App.css';
+import './App.scss';
 
 import Main from './containers/Main';
 

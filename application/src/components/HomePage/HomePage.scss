@@ -1,5 +1,7 @@
+@import '../../styles/_styles.scss';
+
 .project-name {
   font-weight: 400;
-  color: #02386d;
+  color: $blue-color;
   text-transform: capitalize;
 }

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 
 import HeadTags from '../Head/Tags';
-import Grid from '@material-ui/core/Grid';
+import { Grid } from '@material-ui/core';
 
 interface Props {
   title: string,
